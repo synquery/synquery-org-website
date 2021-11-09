@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e8f2e766-XXXX-XXXX-XXXX-XXXXXXXX/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
-[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)
+<!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
 [![Crowdin](https://badges.crowdin.net/synquery-org/localized.svg)](https://crowdin.com/project/synquery-org)
 
@@ -13,11 +13,11 @@
 </h1>
 
 This is the repo for the [synquery.org](https://synquery.org) website, a resource for the Synquery community. 
-The purpose of the site is to _“Be the best portal to Synquery for our growing global community"_ - read more about what this means [here](https://synquery.org/en/about/).
+The purpose of the site is to be the best portal to Synquery for our growing global community.
 
-The Synquery has born in 2010, as a PaaS platform for Engineers by Kenji Yoshida, the founder of East Cloud Inc.
+The Synquery has born in 2010, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
 And the next generation leader Yoshitaka Sakamoto has been highly interested in the crypto currency ability especially both the platform [Ethereum](https://ethereum.org) and [Symbol(NEM2)](https://github.com/symbol).
-He proposed new consensus algorithm "PoSy" which the idea will realize the predicted transaction and show new world for human well-being stage.
+He proposed new consensus algorithm "PoSy" which the idea will realize the predicted transaction and open a new world view for human well-being stage.
 
 [synquery.org](https://synquery.org) is improved and changed over time through the contributions of community members who submit content, 
 give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [synquery.org](https://synquery.org), 
