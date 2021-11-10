@@ -7,7 +7,7 @@
 <!--
   https://emojipedia.org/
 -->
-<h1 align="center" style="margin-top: 1em;">
+<h1 align="center" style="margin-top: 1em;border-bottom: 0 none;">
   <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
   <p>🥂 synquery.org へようこそ!</p>
 </h1>
