@@ -15,7 +15,7 @@
 This is the repo for the [synquery.org](https://synquery.org) website, a resource for the Synquery community. 
 The purpose of the site is to be the best portal to Synquery for our growing global community.
 
-The Synquery has born in 2010, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
+The Synquery was born in 2010, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
 And the next generation leader Yoshitaka Sakamoto has been highly interested in the crypto currency ability especially both the platform [Ethereum](https://synquery.org) and [Symbol(NEM2)](https://github.com/symbol).
 He proposed new consensus algorithm "PoSy" which idea will realize the predicted transaction and open a new world view for human well-being stage.
 
@@ -216,12 +216,10 @@ To get more information about the program, learn how to use Crowdin, check on th
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/src`                                   | Main source folder for development                                                                                                                                                                                  |
 | `/src/assets`                            | Image assets                                                                                                                                                                                                        |
-| `/src/components`                        | React components that do not function as standalone pages                                                                                                                                                          |
 | `/src/content`                           | Markdown/MDX files for site content stored here. <br>For example: `synquery.org/en/about/` is built from `src/content/about/index.md` <br>The markdown files are parsed and rendered by `src/templates/static.js`\* |
 | `/src/content/developers/docs`           | \*Markdown files in here use the Docs template: `src/templates/docs.js`                                                                                                                                             |
 | `/src/content/developers/tutorials`      | \*Markdown files in here use the Tutorial template: `src/templates/tutorial.js`                                                                                                                                     |
 | `/src/data`                              | General data files importable by components                                                                                                                                                                         |
-| `/src/hooks`                             | Custom React hooks                                                                                                                                                                                                  |
 | `/src/intl`                              | Language translation JSON files                                                                                                                                                                                     |
 | `/src/lambda`                            | Lambda function scripts for API calls                                                                                                                                                                               |
 | `/src/pages`<br>`/src/pages-conditional` | React components that function as standalone pages. <br>For example: `synquery.org/en/wallets/find-wallet` is built from `src/pages/wallets/find-wallet.js`                                                        |
@@ -232,6 +230,7 @@ To get more information about the program, learn how to use Crowdin, check on th
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
+<!--
 ## Website conventions / best practices
 
 ### ❗️ Translation initiative
@@ -374,7 +373,9 @@ export const query = graphql`
 ```
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
+-->
 
+<!--
 ![POAP Logo](src/assets/poap-logo.svg)
 
 ## Claim your POAP!
@@ -383,7 +384,6 @@ export const query = graphql`
 
 > The Proof of Attendance Protocol is a dapp that distributes badges in the form of ERC-721 tokens to prove you participated in an event. [More on POAPs](https://www.poap.xyz/).
 
-<!--
 ### synquery.org 2021 Contributor POAP
 
 - If you have committed any changes in 2021 so far that were merged into our repo, you have a POAP waiting!
