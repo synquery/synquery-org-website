@@ -35,7 +35,8 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0"
+    "pretty-quick": "^3.1.0",
+    "st": "*"
   },
   "resolutions": {
     "sharp": "0.27.0"
@@ -49,7 +50,9 @@
     "copy-contributors": "node src/scripts/copy-contributors.js",
     "generate-heading-ids": "node src/scripts/generate-heading-ids.js",
     "merge-translations": "node src/scripts/merge-translations.js",
-    "start": "yarn merge-translations && yarn copy-contributors",
+    "start": "node -e \"require('http').createServer(require('st')({ path: process.cwd() + '/public' })).listen(8080)\"& sleep(3); open \"http://localhost:8080/index.html\"",
+    "stop": "kill `ps -ef | grep node | grep 8080 | awk '{print $2}'`",
+    "start-org": "yarn merge-translations && yarn copy-contributors",
     "start:lambda": "netlify-lambda serve src/lambda",
     "test": "jest"
   },

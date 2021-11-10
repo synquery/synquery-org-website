@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/pedantic-mclean-9d4228/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dc06b576-e727-4553-bef4-a5b05f855027/deploy-status)](https://app.netlify.com/sites/pedantic-mclean-9d4228/deploys)
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
 <!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
@@ -207,12 +207,13 @@ To get more information about the program, learn how to use Crowdin, check on th
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
 - [webpack](https://webpack.js.org/)
+- [Netlify](https://www.netlify.com/) - DNS management and primary host for [`master` build](https://synquery.org) and [`dev` build](https://dev.synquery.org). 
+  Also provides automatic preview deployments for all pull requests
+- [Crowdin](https://crowdin.com/) - crowdsourcing for our translation efforts (See "Translation initiative" below)
+- [GitHub Actions](https://github.com/features/actions) - Manages CI/CD, and issue tracking
 - [GraphQL](https://graphql.org/) - A query language for APIs
 - [Algolia](https://www.algolia.com/) - Site indexing, rapid intra-site search results, and search analytics. [Learn more on how we implement Algolia for site search](./docs/ALGOLIA_DOCSEARCH.md).
   - Primary implementation: `/src/components/Search/index.js`
-- [Crowdin](https://crowdin.com/) - crowdsourcing for our translation efforts (See "Translation initiative" below)
-- [GitHub Actions](https://github.com/features/actions) - Manages CI/CD, and issue tracking
-- [Netlify](https://yarnpkg.com/cli/install) - DNS management and primary host for `master` build. Also provides automatic preview deployments for all pull requests
 
 ### Code structure
 

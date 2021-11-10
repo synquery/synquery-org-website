@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/pedantic-mclean-9d4228/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dc06b576-e727-4553-bef4-a5b05f855027/deploy-status)](https://app.netlify.com/sites/pedantic-mclean-9d4228/deploys)
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
 <!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
@@ -19,12 +19,14 @@
 世界中に Synquery コミュニティが広がるよう、さまざまな情報を掲載します。
 
 Synquery は 2010年にエンジニアのためのサービスプラットフォームとして、株式会社東雲の創設者である吉田氏によって生み出されました。
-その後 10年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「Human well-being」（よき生の実現による社会全体の幸福）の一端を担うプロトコル "PoSy" を
+その後 10年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「Human well-being」（よき生の実現による社会全体の幸福）の一端を担うコンセンサスアルゴリズム ’PoSy’ を
 考案しました。このアイデアは想定トランザクションの履行をステーク（持ち高）とすることで、新しい世界を表現しようとしています。
 例えば、
-  - 携帯の不要なウォレット決済
+  
+  - スマートフォンの不要なウォレット決済
   - 対人サービスの価値向上
   - 福利厚生サービスの充実
+  
 などを目的としています。
 
 [synquery.org](https://synquery.org) は常にリーダー、グループおよび協力者の有志の変更、フィードバックおよび管理活動によりアップデートされます。
@@ -48,16 +50,16 @@ for security and diversity. [Check out the different implementations](https://sy
 <!--
 ## synquery.org の更新方法:
 
-### (手順1) 課題や問題をご報告ください
+### (手順1/8) 課題や問題を報告
 
 - [new issue](https://github.com/synquery/synquery-org-website/issues/new/choose) を作成し、内容を入力ください。
 - [Synquery Team が応答します](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
 
-### (手順2) 本リポジトリをフォーク(fork) してください。
+### (手順2/8) 本リポジトリをフォーク(fork) 
 
 - [フォークについての github のヘルプ](https://help.github.com/en/articles/fork-a-repo).
 
-### Set up your local environment (optional)
+### (手順3/8)(任意) ローカル環境をセットアップ
 
 If you're ready to contribute and create your PR, it will help to set up a local environment so you can see your changes.
 
@@ -129,7 +131,7 @@ ETHERSCAN_API_KEY=K6NUTARFJZJCIXHF1F1E1YGJZ8RQ29BE4U
 DEFI_PULSE_API_KEY=4953aaf7966dad9c129397e197a0630ed0594f66962dd5fb058972b250da
 ```
 
-### Make awesome changes!
+### (手順4/8) どんどん変更しましょう！
 
 1. Create new branch for your changes
 
@@ -158,7 +160,7 @@ $ git commit -m "brief description of changes [Fixes #1234]"
 $ git push
 ```
 
-### Local development with lambda functions
+### (手順5/8)(任意) Lambda で任意の機能を呼び出す
 
 There may be times where you develop features that make external API requests to other services. For these we write lambda functions to obfuscate API keys. In order to test these locally, you will need to do the following:
 
@@ -173,7 +175,7 @@ yarn start:lambda
 
 5. Where you reference /.netlify functions for server calls, add a conditional to call localhost:9000 endpoints when not in the production environment.
 
-### Submit your PR
+### (手順6/8) dev ブランチに PR (プルリクエスト) してください！
 
 - After your changes are committed to your GitHub fork, submit a pull request (PR) to the `dev` branch of the `synquery/synquery-org-website` repo
 - In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))
@@ -183,14 +185,14 @@ yarn start:lambda
 - _Confirm your Netlify preview deploy looks & functions as expected_
 - Why not say hi and draw attention to your PR in [our discord server](https://discord.gg/CetY6Y4)?
 
-### Wait for review
+### (手順7/8) レビュー完了をお待ちください。
 
 - The website team reviews every PR
 - See [how decisions are made on content changes](https://synquery.org/en/contributing/#how-decisions-about-the-site-are-made)
 - Acceptable PRs will be approved & merged into the `dev` branch
 -->
 
-### Release
+### (手順8/8) dev ブランチの変更完了、そしてリリースがアナウンスされます
 
 - `master` is continually synced to Netlify and will automatically deploy new commits to synquery.org
 - The [website team](https://synquery.org/en/contributing/#how-decisions-about-the-site-are-made) will periodically merge `dev` into `master` (typically multiple times per week)
