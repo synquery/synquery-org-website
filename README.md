@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e8f2e766-XXXX-XXXX-XXXX-XXXXXXXX/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/pedantic-mclean-9d4228/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
 <!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
@@ -11,6 +11,7 @@
   <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
   <p>🥂 Welcome to synquery.org!</p>
 </h1>
+<div style="font-size:80%;"><a href="./README-ja.md"> 日本語版はこちら </a></div>
 
 This is the repo for the [synquery.org](https://synquery.org) website, a resource for the Synquery community. 
 The purpose of the site is to be the best portal to Synquery for our growing global community.
@@ -427,9 +428,6 @@ Thanks goes to these wonderful people [👏](https://allcontributors.org/docs/en
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. 
-Contributions of any kind welcome!
 
 <!--
 ### Join our Discord server

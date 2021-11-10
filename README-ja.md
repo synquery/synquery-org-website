@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e8f2e766-XXXX-XXXX-XXXX-XXXXXXXX/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/pedantic-mclean-9d4228/deploy-status)](https://app.netlify.com/sites/synquery/deploys)
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
 <!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
@@ -16,8 +16,13 @@
 世界中に Synquery コミュニティが広がるよう、さまざまな情報を掲載します。
 
 Synquery は 2010年にエンジニアのためのサービスプラットフォームとして、株式会社東雲の創設者である吉田氏によって生み出されました。
-その後 10年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「社会全体の幸福」に向けたプロトコル "PoSy" を
-考案しました。
+その後 10年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「Human well-being」（よき生の実現による社会全体の幸福）の一端を担うプロトコル "PoSy" を
+考案しました。このアイデアは想定トランザクションの履行をステーク（持ち高）とすることで、新しい世界を表現しようとしています。
+例えば、
+  - 携帯の不要なウォレット決済
+  - 対人サービスの価値向上
+  - 福利厚生サービスの充実
+などを目的としています。
 
 [synquery.org](https://synquery.org) は常にリーダー、グループおよび協力者の有志の変更、フィードバックおよび管理活動によりアップデートされます。
 もし本プロジェクトへの協力と貢献に関心がありましたら [参加するには](https://synquery.org/en/contributing/) をご確認の上、ぜひご参画ください。 
@@ -32,22 +37,22 @@ for security and diversity. [Check out the different implementations](https://sy
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
-# How to contribute
+# 参加方法
 
-This project follows the [all-contributors](https://allcontributors.org/docs/en/overview) specification. 
-Contributions of any kind welcome!
+このプロジェクトは [all-contributors](https://github.com/all-contributors/all-contributors) により表記されます。 
+心の向く形でご参加・ご協力いただければ、嬉しい限りです。
 
 <!--
-## How updates are made to synquery.org:
+## synquery.org の更新方法:
 
-### Submit an issue
+### (手順1) 課題や問題をご報告ください
 
-- Create a [new issue](https://github.com/synquery/synquery-org-website/issues/new/choose).
-- Comment on the issue (if you'd like to be assigned to it) - that way [our team can assign the issue to you](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
+- [new issue](https://github.com/synquery/synquery-org-website/issues/new/choose) を作成し、内容を入力ください。
+- [Synquery Team が応答します](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
 
-### Fork the repository (repo)
+### (手順2) 本リポジトリをフォーク(fork) してください。
 
-- If you're not sure, here's how to [fork the repo](https://help.github.com/en/articles/fork-a-repo).
+- [フォークについての github のヘルプ](https://help.github.com/en/articles/fork-a-repo).
 
 ### Set up your local environment (optional)
 
@@ -298,30 +303,6 @@ import Emoji from "./Emoji"
 <Emoji text=":star:" size={1} /> // sized in `em`
 ```
 
-- **Icons**: We use [React Icons](https://react-icons.github.io/react-icons/)
-  - `src/components/Icon.js` is the component used to import icons to be used
-  - If an icon you want to use is not listed you will need to add it to this file
-
-`src/components/Icon.js`:
-
-```
-// Example of how to add new icon not listed
-import { ZzIconName } from "react-icons/zz"
-
-// Then add to IconContect.Provider children:
-{name === "alias" && <ZzIconName />}
-```
-
-From React component:
-
-```
-// Example of icon use
-import Icon from "./Icon"
-
-// Within JSX:
-<Icon name="alias" />
-```
-
 ## Image loading and API calls using GraphQL
 
 - [Gatsby + GraphQL](https://www.gatsbyjs.com/docs/graphql/) used for loading of images and preferred for API calls (in lieu of REST, if possible/practical). Utilizes static page queries that run at build time, not at run time, optimizing performance.
@@ -402,9 +383,9 @@ export const query = graphql`
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
-## Contributors
+## 謝辞
 
-Thanks goes to these wonderful people [👏](https://allcontributors.org/docs/en/emoji-key):
+協力者および関係者の皆様に、心より感謝いたします [👏](https://allcontributors.org/docs/en/emoji-key):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -427,8 +408,6 @@ Thanks goes to these wonderful people [👏](https://allcontributors.org/docs/en
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. 
-Contributions of any kind welcome!
 
 <!--
 ### Join our Discord server
