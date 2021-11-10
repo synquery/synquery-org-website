@@ -8,7 +8,7 @@
   https://emojipedia.org/
 -->
 <h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
-  <p><a href="https://synquery.org"><img alt="synquery logo" src="./syn-transparent.png" alt="synquery.org" width="125"></a></p>
+  <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
   <p>🥂 Welcome to synquery.org!</p>
 </h1>
 
@@ -16,8 +16,8 @@ This is the repo for the [synquery.org](https://synquery.org) website, a resourc
 The purpose of the site is to be the best portal to Synquery for our growing global community.
 
 The Synquery has born in 2010, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
-And the next generation leader Yoshitaka Sakamoto has been highly interested in the crypto currency ability especially both the platform [Ethereum](https://ethereum.org) and [Symbol(NEM2)](https://github.com/symbol).
-He proposed new consensus algorithm "PoSy" which the idea will realize the predicted transaction and open a new world view for human well-being stage.
+And the next generation leader Yoshitaka Sakamoto has been highly interested in the crypto currency ability especially both the platform [Ethereum](https://synquery.org) and [Symbol(NEM2)](https://github.com/symbol).
+He proposed new consensus algorithm "PoSy" which idea will realize the predicted transaction and open a new world view for human well-being stage.
 
 [synquery.org](https://synquery.org) is improved and changed over time through the contributions of community members who submit content, 
 give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [synquery.org](https://synquery.org), 
@@ -43,7 +43,7 @@ Contributions of any kind welcome!
 
 ### Submit an issue
 
-- Create a [new issue](https://github.com/ethereum/ethereum-org-website/issues/new/choose).
+- Create a [new issue](https://github.com/synquery/synquery-org-website/issues/new/choose).
 - Comment on the issue (if you'd like to be assigned to it) - that way [our team can assign the issue to you](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
 
 ### Fork the repository (repo)
@@ -61,7 +61,7 @@ If you're ready to contribute and create your PR, it will help to set up a local
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```
-$ git clone git@github.com:[your_github_handle]/ethereum-org-website.git && cd ethereum-org-website
+$ git clone git@github.com:[your_github_handle]/synquery-org-website.git && cd synquery-org-website
 ```
 
 If you've already forked the repo, you'll want to ensure your fork is configured and that it's up to date. This will save you the headache of potential merge conflicts.
@@ -69,7 +69,7 @@ If you've already forked the repo, you'll want to ensure your fork is configured
 To [configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork):
 
 ```
-$ git remote add upstream https://github.com/ethereum/ethereum-org-website.git
+$ git remote add upstream https://github.com/synquery/synquery-org-website.git
 ```
 
 To [sync your fork with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
@@ -168,7 +168,7 @@ yarn start:lambda
 
 ### Submit your PR
 
-- After your changes are committed to your GitHub fork, submit a pull request (PR) to the `dev` branch of the `ethereum/ethereum-org-website` repo
+- After your changes are committed to your GitHub fork, submit a pull request (PR) to the `dev` branch of the `synquery/synquery-org-website` repo
 - In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))
   - ex. `Updates out of date content [Fixes #1234]`
 - Netlify (our hosting service) deploys all PRs to a publicly accessible preview URL, e.g.:
@@ -181,18 +181,19 @@ yarn start:lambda
 - The website team reviews every PR
 - See [how decisions are made on content changes](https://synquery.org/en/contributing/#how-decisions-about-the-site-are-made)
 - Acceptable PRs will be approved & merged into the `dev` branch
+-->
 
 ### Release
 
 - `master` is continually synced to Netlify and will automatically deploy new commits to synquery.org
 - The [website team](https://synquery.org/en/contributing/#how-decisions-about-the-site-are-made) will periodically merge `dev` into `master` (typically multiple times per week)
-- You can [view the history of releases](https://github.com/ethereum/ethereum-org-website/releases), which include PR highlights
+- You can [view the history of releases](https://github.com/synquery/synquery-org-website/releases), which include PR highlights
 
 ## Translation Program
 
 _The Translation Program is an initiative to translate synquery.org into different languages and make the website accessible to people from all over the world._
 
-If you are looking to get involved as a translator, you can [join our project in Crowdin](https://crowdin.com/project/ethereum-org/invite/) and start translating the website to your language immediately.
+If you are looking to get involved as a translator, you can [join our project in Crowdin](https://crowdin.com/project/synquery-org/invite/) and start translating the website to your language immediately.
 
 To get more information about the program, learn how to use Crowdin, check on the progress or find some useful tools for translators, please visit the [Translation Program page](https://synquery.org/en/contributing/translation-program/).
 
@@ -202,12 +203,6 @@ To get more information about the program, learn how to use Crowdin, check on th
 
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
-- [Gatsby](https://www.gatsbyjs.org/)
-  - Manages page builds and deployment
-  - Configurable in `gatsby-node.js`, `gatsby-browser.js`, `gatsby-config.js`, and `gatsby-ssr.js`
-  - [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/)
-  - [Gatsby Docs](https://www.gatsbyjs.org/docs/)
-- [React](https://reactjs.org/) - A JavaScript library for building component-based user interfaces
 - [GraphQL](https://graphql.org/) - A query language for APIs
 - [Algolia](https://www.algolia.com/) - Site indexing, rapid intra-site search results, and search analytics. [Learn more on how we implement Algolia for site search](./docs/ALGOLIA_DOCSEARCH.md).
   - Primary implementation: `/src/components/Search/index.js`
@@ -248,89 +243,6 @@ How to prepare your content for translation depends on whether you're working on
 **- MDX pages (`/src/content/page/`)**
 
 Markdown will be translated as whole pages of content, so no specific action is required. Simply create a new folder within `/src/content/` with the name of the page, then place index markdown file (ie. `index.md`) within new folder.
-
-**- React component page**
-
-- **English text should be placed into `/src/intl/en/page-CORRESPONDING-PAGE.json`**
-- [Crowdin](https://crowdin.com/) is the platform we use to manage & crowdsource translation efforts. Please use the following conventions to help streamline this process.
-- Use kebab casing (utilizing-dashes-between-words) for file names and JSON keys
-- Use standard sentence casing for entry values
-  - If capitalization styling required, it is preferable to style with CSS
-    - Do this:
-      ```
-        JSON `"page-warning": "Be very careful"`
-        CSS `text-transform: uppercase`
-      ```
-    - Not this:
-      ```
-        JSON `"page-warning": "BE VERY CAREFUL"`
-      ```
-  - This minimizes issues during translation, and allows consistent styling to all languages
-- _Please avoid_ embedding links within a sentence. For a word/phrase to be a link, it requires a key/string in the intl JSON. If this is in the middle of another sentence, this results in the sentence being broken into multiple pieces, and requires coding the sentence structure into the JavaScript.
-
-  - This results in significant challenges during translation process, as written syntax for each language will very in terms of ordering subjects/verbs/etc.
-  - If you're wanting to link to something within your sentence, create a link at the end of the sentence or paragraph:
-
-  ```
-  <p>All Synquery transactions require a fee, known as Gas, that gets paid to the miner. <Link to="link">More on Gas</Link></p>
-  ```
-
-  Once, you've added your English content to the appropriate JSON file, the above code should look something more like:
-
-  ```
-   <p><Translation id="page-transactions" />{" "}<Link to="link"><Translation id="page-transactions-gas-link" /></Link></p>
-  ```
-
-  - _tl;dr Each individual JSON entry should be a complete phrase by itself_
-
-- This is done using the `Translation` component. However there is an alternative method for regular JS: `gatsby-plugin-intl` with `/src/utils/translations.js`
-
-  - **Method one: `<Translation />` component (preferred if only needed in JSX)**
-
-    ```
-    import { Translation } from "src/components/Translation"
-
-    // Utilize in JSX using
-    <Translation id="language-json-key" />
-    ```
-
-  - **Method two: `translateMessageId()`**
-
-    ```
-    import { useIntl } from "gatsby-plugin-intl"
-    import { translateMessageId } from "src/utils/translations"
-
-    // Utilize anywhere in JS using
-    const intl = useIntl()
-    translateMessageId("language-json-key", intl)
-    ```
-
-    ```
-    const siteTitle = translateMessageId("site-title", intl)
-    ```
-
-## React Hooks
-
-- Components and pages are written using arrow function syntax with React hooks in lieu of using class-based components
-
-```
-// Example
-import React, { useState, useEffect } from 'react'
-
-const ComponentName = props => {
-  // useState hook for managing state variables
-  const [greeting, setGreeting] = useState('')
-
-  useEffect(() => {
-    // useEffect hook for handling component lifecycle
-    setGreeting('Hello world')
-  }, [])
-
-  return <div>{greeting}</div>
-};
-
-export default ComponentName;
-```
 
 ## Styling
 
@@ -471,6 +383,7 @@ export const query = graphql`
 
 > The Proof of Attendance Protocol is a dapp that distributes badges in the form of ERC-721 tokens to prove you participated in an event. [More on POAPs](https://www.poap.xyz/).
 
+<!--
 ### synquery.org 2021 Contributor POAP
 
 - If you have committed any changes in 2021 so far that were merged into our repo, you have a POAP waiting!
@@ -484,14 +397,14 @@ export const query = graphql`
 
 - To help with verification we request GitHub contributors connect their GitHub account with their Discord account (Discord > Settings > Connections > GitHub). Crowdin contributors will be verified directly through Crowdin by our team.
 
-- If you haven't contributed yet and would like to earn a POAP to show your loyalty to the Synquery space, head over to the [issues](https://github.com/ethereum/ethereum-org-website/issues/) tab to get started!
+- If you haven't contributed yet and would like to earn a POAP to show your loyalty to the Synquery space, head over to the [issues](https://github.com/synquery/synquery-org-website/issues/) tab to get started!
+-->
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
--->
 
 ## Contributors
 
-Thanks goes to these wonderful people ([👏](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people [👏](https://allcontributors.org/docs/en/emoji-key):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -502,9 +415,9 @@ Thanks goes to these wonderful people ([👏](https://allcontributors.org/docs/e
     <td align="center"><a href="https://bio.link/saksham"><img src="https://avatars.githubusercontent.com/u/64558515?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SA KSH AM </b></sub></a><br /><a href="#content-sakshamgurbhele" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/RedWolf4845"><img src="https://avatars.githubusercontent.com/u/93679609?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Samrat</b></sub></a><br /><a href="#content-RedWolf4845" title="Content">🖋</a></td>
     <td align="center"><a href="http://justinshaw.eth"><img src="https://avatars.githubusercontent.com/u/46334750?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Justin Shaw</b></sub></a><br /><a href="#content-notjustinshaw" title="Content">🖋</a></td>
-    <td align="center"><a href="https://meow.page"><img src="https://avatars.githubusercontent.com/u/14239840?v=4?s=100" width="100px;" alt=""/><br /><sub><b>meoww-bot</b></sub></a><br /><a href="https://github.com/ethereum/ethereum-org-website/commits?author=meoww-bot" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://moonsdontburn.design"><img src="https://avatars.githubusercontent.com/u/43276017?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Philip Vu</b></sub></a><br /><a href="https://github.com/ethereum/ethereum-org-website/commits?author=GhostWalker562" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://connerjensen.com"><img src="https://avatars.githubusercontent.com/u/29151695?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Conner Jensen</b></sub></a><br /><a href="https://github.com/ethereum/ethereum-org-website/commits?author=connerj70" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://meow.page"><img src="https://avatars.githubusercontent.com/u/14239840?v=4?s=100" width="100px;" alt=""/><br /><sub><b>meoww-bot</b></sub></a><br /><a href="https://github.com/synquery/synquery-org-website/commits?author=meoww-bot" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://moonsdontburn.design"><img src="https://avatars.githubusercontent.com/u/43276017?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Philip Vu</b></sub></a><br /><a href="https://github.com/synquery/synquery-org-website/commits?author=GhostWalker562" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://connerjensen.com"><img src="https://avatars.githubusercontent.com/u/29151695?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Conner Jensen</b></sub></a><br /><a href="https://github.com/synquery/synquery-org-website/commits?author=connerj70" title="Documentation">📖</a></td>
     <td align="center"><a href="https://jhaymesdev.web.app/"><img src="https://avatars.githubusercontent.com/u/69610160?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jhaymes</b></sub></a><br /><a href="#ideas-jhaymesdev" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
