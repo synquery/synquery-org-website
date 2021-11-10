@@ -11,8 +11,8 @@
   <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
   <p>🥂 synquery.org へようこそ!</p>
 </h1>
-<h5 align="center" style="margin-bottom: 3em;">
-  （ <a href="./README.md" style="font-size:80%;"> README.md </a> ）
+<h5>
+  （ <a href="./README.md" style="font-size:80%;"> README.md （英文）はこちら </a> ）
 </h5>
 
 このリポジトリは [synquery.org](https://synquery.org) のウェブサイト管理のためであり、また Synquery コミュニティのためのまとめ情報です。
