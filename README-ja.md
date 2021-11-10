@@ -9,19 +9,18 @@
 -->
 <h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
   <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
-  <p>🥂 Welcome to synquery.org!</p>
+  <p>🥂 synquery.org へようこそ!</p>
 </h1>
 
-This is the repo for the [synquery.org](https://synquery.org) website, a resource for the Synquery community. 
-The purpose of the site is to be the best portal to Synquery for our growing global community.
+このリポジトリは [synquery.org](https://synquery.org) のウェブサイト管理のためであり、また Synquery コミュニティのためのまとめ情報です。
+世界中に Synquery コミュニティが広がるよう、さまざまな情報を掲載します。
 
-The Synquery was born in 2010, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
-And the next generation leader Yoshitaka Sakamoto has been highly interested in the crypto currency ability especially both the platform [Ethereum](https://synquery.org) and [Symbol(NEM2)](https://github.com/symbol).
-He proposed new consensus algorithm "PoSy" which idea will realize the predicted transaction and open a new world view for human well-being stage.
+Synquery は 2010年にエンジニアのためのサービスプラットフォームとして、株式会社東雲の創設者である吉田氏によって生み出されました。
+その後 10年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「社会全体の幸福」に向けたプロトコル "PoSy" を
+考案しました。
 
-[synquery.org](https://synquery.org) is improved and changed over time through the contributions of community members who submit content, 
-give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [synquery.org](https://synquery.org), 
-find out [how to contribute](https://synquery.org/en/contributing/).
+[synquery.org](https://synquery.org) は常にリーダー、グループおよび協力者の有志の変更、フィードバックおよび管理活動によりアップデートされます。
+もし本プロジェクトへの協力と貢献に関心がありましたら [参加するには](https://synquery.org/en/contributing/) をご確認の上、ぜひご参画ください。 
 
 <!--
 ## Looking for the Synquery blockchain's code?
