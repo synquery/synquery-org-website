@@ -10,7 +10,7 @@
 <h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
   <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
   <p>🥂 Welcome to synquery.org!</p>
-  <p><a href="./README-ja.md" style="font-size:80%;"> 日本語版はこちら </a></p>
+  <h5><a href="./README-ja.md" style="font-size:80%;"> 日本語版はこちら </a></h5>
 </h1>
 
 This is the repo for the [synquery.org](https://synquery.org) website, a resource for the Synquery community. 
