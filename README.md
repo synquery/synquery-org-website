@@ -7,11 +7,11 @@
 <!--
   https://emojipedia.org/
 -->
-<h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
+<h1 align="center" style="margin-top: 1em;">
   <p><a href="https://synquery.org"><img alt="synquery logo" src="./xyn-transparent.png" alt="synquery.org" width="125"></a></p>
   <p>🥂 Welcome to synquery.org!</p>
 </h1>
-<h5>
+<h5 align="center" style="margin-bottom: 3em;">
   （ <a href="./README-ja.md" style="font-size:80%;"> 日本語版はこちら </a> ）
 </h5>
 
