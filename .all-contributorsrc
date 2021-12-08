@@ -1,0 +1,20 @@
+{
+  "projectName": "synquery-org",
+  "projectOwner": "synquery community",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "synquery-org-website",
+  "projectOwner": "synquery",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
