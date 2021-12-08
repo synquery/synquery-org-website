@@ -2,7 +2,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
 <!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
-[![Crowdin](https://badges.crowdin.net/synquery-org/localized.svg)](https://crowdin.com/project/synquery-org)
+<!--[![Crowdin](https://badges.crowdin.net/synquery-org/localized.svg)](https://crowdin.com/project/synquery-org)-->
 
 <!--
   https://emojipedia.org/
@@ -18,9 +18,9 @@
 This is the repo for the [synquery.org](https://synquery.org) website, a resource for the Synquery community. 
 The purpose of the site is to be the best portal to Synquery for our growing global community.
 
-The Synquery was born in 2010, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
+The Synquery was born in 2010 in Japan, as a PaaS platform for engineers by Kenji Yoshida, the founder of East Cloud Inc.
 And the next generation leader Yoshitaka Sakamoto has been highly interested in the crypto currency ability especially both the platform [Ethereum](https://synquery.org) and [Symbol(NEM2)](https://github.com/symbol).
-He proposed new consensus algorithm "PoSy" which idea will realize the predicted transaction and open a new world view for human well-being stage.
+He proposed new consensus algorithm `PoSy` which idea will realize the predicted transaction and open a new world view for human well-being stage.
 
 [synquery.org](https://synquery.org) is improved and changed over time through the contributions of community members who submit content, 
 give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [synquery.org](https://synquery.org), 
@@ -44,16 +44,16 @@ Contributions of any kind welcome!
 <!--
 ## How updates are made to synquery.org:
 
-### Submit an issue
+### (step 1/8) Submit an issue
 
 - Create a [new issue](https://github.com/synquery/synquery-org-website/issues/new/choose).
 - Comment on the issue (if you'd like to be assigned to it) - that way [our team can assign the issue to you](https://github.blog/2019-06-25-assign-issues-to-issue-commenters/).
 
-### Fork the repository (repo)
+### (step 2/8) Fork the repository (repo)
 
 - If you're not sure, here's how to [fork the repo](https://help.github.com/en/articles/fork-a-repo).
 
-### Set up your local environment (optional)
+### (step 3/8) Set up your local environment (optional)
 
 If you're ready to contribute and create your PR, it will help to set up a local environment so you can see your changes.
 
@@ -98,14 +98,9 @@ We recommend setting this up when running the project locally, as we use the Git
 > - In local repo root directory: Make a copy of `.env.example` and name it `.env`
 > - Copy & paste your new GitHub API token into `.env`
 
-```
-// .env Example:
-GATSBY_GITHUB_TOKEN_READ_ONLY=48f84de812090000demo00000000697cf6e6a059
-```
+5. Add Syxplorer API token (free)
 
-5. Add Etherscan API token (free)
-
-> - [Create an account](https://etherscan.io/) on Etherscan
+> - [Create an account](https://syxplorer.synquery.com/)
 > - Navigate to your Account Settings page
 > - In the sidebar, click on 'API-KEYs' and add a new token
 > - Copy & paste your Api-Key Token from Etherscan into `.env`
@@ -136,7 +131,7 @@ $ git checkout -b new_branch_name
 2. Start developing!
 
 ```
-$ yarn start
+$ yarn startdev
 ```
 
 - Open this directory in your favorite text editor / IDE, and see your changes live by visiting `localhost:8000` from your browser
@@ -222,12 +217,9 @@ To get more information about the program, learn how to use Crowdin, check on th
 | `/src`                                   | Main source folder for development                                                                                                                                                                                  |
 | `/src/assets`                            | Image assets                                                                                                                                                                                                        |
 | `/src/content`                           | Markdown/MDX files for site content stored here. <br>For example: `synquery.org/en/about/` is built from `src/content/about/index.md` <br>The markdown files are parsed and rendered by `src/templates/static.js`\* |
-| `/src/content/developers/docs`           | \*Markdown files in here use the Docs template: `src/templates/docs.js`                                                                                                                                             |
-| `/src/content/developers/tutorials`      | \*Markdown files in here use the Tutorial template: `src/templates/tutorial.js`                                                                                                                                     |
 | `/src/data`                              | General data files importable by components                                                                                                                                                                         |
 | `/src/intl`                              | Language translation JSON files                                                                                                                                                                                     |
 | `/src/lambda`                            | Lambda function scripts for API calls                                                                                                                                                                               |
-| `/src/pages`<br>`/src/pages-conditional` | React components that function as standalone pages. <br>For example: `synquery.org/en/wallets/find-wallet` is built from `src/pages/wallets/find-wallet.js`                                                        |
 | `/src/scripts`<br>`/src/utils`           | Custom utility scripts                                                                                                                                                                                              |
 | `/src/styles`                            | Stores `layout.css` which contains root level css styling                                                                                                                                                           |
 | `/src/templates`                         | JSX templates that define layouts of different regions of the site                                                                                                                                                  |

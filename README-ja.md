@@ -2,7 +2,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/synquery/synquery-org-website?color=orange&style=flat-square)](#contributors-)
 <!--[![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=synquery.org%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/CetY6Y4)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/synquery.svg?style=social)](https://twitter.com/synquery)
-[![Crowdin](https://badges.crowdin.net/synquery-org/localized.svg)](https://crowdin.com/project/synquery-org)
+<!--[![Crowdin](https://badges.crowdin.net/synquery-org/localized.svg)](https://crowdin.com/project/synquery-org)-->
 
 <!--
   https://emojipedia.org/
@@ -18,13 +18,12 @@
 このリポジトリは [synquery.org](https://synquery.org) のウェブサイト管理のためであり、また Synquery コミュニティのためのまとめ情報です。
 世界中に Synquery コミュニティが広がるよう、さまざまな情報を掲載します。
 
-Synquery は 2010年にエンジニアのためのサービスプラットフォームとして、株式会社東雲の創設者である吉田氏によって生み出されました。
-その後 10年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「Human well-being」（よき生の実現による社会全体の幸福）の一端を担うコンセンサスアルゴリズム ’PoSy’ を
-考案しました。このアイデアは想定トランザクションの履行をステーク（持ち高）とすることで、新しい世界を表現しようとしています。
+Synquery は 2010 年にエンジニアのためのサービスプラットフォームとして、株式会社東雲の創設者である吉田氏によって日本で生み出されました。
+その後 10 年余の時を経てリーダーは坂本氏へのと世代交代しました。同氏は暗号資産の技術、とりわけ [イーサリアム](https://synquery.org) と [シンボル(NEM2)](https://github.com/symbol) に興味を持ち、その中からコンピュータサイエンスのキーワードである「Human well-being」（よき生の実現による社会全体の幸福）の一端を担うコンセンサスアルゴリズム「PoSy」を考案しました。このアイデアは想定トランザクションの履行をステーク（持ち高）とすることで、新しい世界を表現しようとしています。
 例えば、
   
   - スマートフォンの不要なウォレット決済
-  - 対人サービスの価値向上
+  - 対人サービスの還元価値向上
   - 福利厚生サービスの充実
   
 などを目的としています。
@@ -208,17 +207,17 @@ To get more information about the program, learn how to use Crowdin, check on th
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
-## The synquery.org website stack
+## synquery.org ウェブサイトで利用している技術とサービス
 
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
 - [webpack](https://webpack.js.org/)
-- [GraphQL](https://graphql.org/) - A query language for APIs
+- [Netlify](https://www.netlify.com/) - DNS 管理と [`master` build](https://synquery.org) および [`dev` build](https://dev.synquery.org) のホスティング
+- [Crowdin](https://crowdin.com/) - 翻訳作業の効率化 (「翻訳の先導」について参照)
+- [GitHub Actions](https://github.com/features/actions) -  CI/CD と課題や問題のトラッキング
+- [GraphQL](https://graphql.org/) - API のためのクエリフォーマット
 - [Algolia](https://www.algolia.com/) - Site indexing, rapid intra-site search results, and search analytics. [Learn more on how we implement Algolia for site search](./docs/ALGOLIA_DOCSEARCH.md).
   - Primary implementation: `/src/components/Search/index.js`
-- [Crowdin](https://crowdin.com/) - crowdsourcing for our translation efforts (See "Translation initiative" below)
-- [GitHub Actions](https://github.com/features/actions) - Manages CI/CD, and issue tracking
-- [Netlify](https://yarnpkg.com/cli/install) - DNS management and primary host for `master` build. Also provides automatic preview deployments for all pull requests
 
 ### Code structure
 
