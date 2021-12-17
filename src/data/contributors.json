@@ -5,7 +5,26 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
-
+    {
+      "login": "ystskm",
+      "name": "Yoshitaka Sakamoto",
+      "avatar_url": "https://synquery.github.io/pages/avatars/ystskm.jpg",
+      "profile": "https://github.com/ystskm",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+    {
+      "login": "s-kiyofumi",
+      "name": "Kiyofumi Suematsu",
+      "avatar_url": "https://en-gage.net/api/show_file/main_parts/1571595/13/4/",
+      "profile": "https://github.com/s-kiyofumi",
+      "contributions": [
+        "content",
+        "review"
+      ]
+    }
   ],
   "contributorsPerLine": 7,
   "projectName": "synquery-org-website",
