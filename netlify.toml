@@ -21,11 +21,17 @@
 
 [build.environment]
   NODE_VERSION = "14.17.5"
-  
+
 # Legacy website pages
 [[redirects]]
   from = "/resources/*"
   to = "/en/"
+
+# Basic parcel builded
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
