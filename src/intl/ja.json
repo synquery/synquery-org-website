@@ -1,6 +1,4 @@
 {
-  "website_last_updated": "本コンテンツの最終更新",
-  "update_datetime": "{Updated,date} {Updated,time}",
   "1inch-logo": "1inch ロゴ",
   "aave-logo": "Aave ロゴ",
   "about": "詳細",
@@ -1908,6 +1906,8 @@
   "banner-staking-1": "ETHを投資しようとしている場合、ステーキングが到着しました！",
   "banner-staking-2": "デポジットコントラクトアドレスの確認",
   "docking": "ドッキング",
+  "website_last_updated": "本コンテンツの最終更新",
+  "update_datetime": "{Updated,date} {Updated,time}",
   "page-eth2-vision-security-desc-9": "バリデータランダムに異なるシャードに割り当てることができます。 これにより、バリデータが特定のシャードを攻撃して共謀することは事実上不可能になります。シャーディングはプルーフ・オブ・ワーク・ブロックチェーン上ではセキュアではありません。なぜならこの方法ではプロトコルによりマイナーを制御することはできないからです。",
   "page-index-sections-developers-desc": "イーサリウムとそのアプリケーションの背後にある技術について学び、それで構築を開始できます。",
   "page-index-sections-developers-image-alt": "レゴブロックで作られたイーサリアム像を構築する手のイラスト",

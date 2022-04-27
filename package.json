@@ -50,7 +50,8 @@
     "start": "parcel serve ./src/index.html --no-cache",
     "start-org": "yarn merge-translations && yarn copy-contributors",
     "start:lambda": "netlify-lambda serve src/lambda",
-    "test": "jest"
+    "test": "jest",
+    "serve": "serve ./dist"
   },
   "husky": {
     "hooks": {

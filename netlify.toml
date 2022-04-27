@@ -78,18 +78,6 @@
 [[redirects]]
   from = "/nft/"
   to = "/en/nft/"
-[[redirects]]
-  from = "/nfts/"
-  to = "/en/nft/"
-[[redirects]]
-  from = "/dao/"
-  to = "/en/dao/"
-[[redirects]]
-  from = "/daos/"
-  to = "/en/dao/"
-[[redirects]]
-  from = "/defi/"
-  to = "/en/defi/"
 
 # Norwegian update
 ## All translations
@@ -130,22 +118,7 @@
 ## All langugages
 [[redirects]]
   from = "/*/beginners"
-  to = "/:splat/what-is-ethereum/"
-[[redirects]]
-  from = "/*/build"
-  to = "/:splat/developers/learning-tools/"
-[[redirects]]
-  from = "/*/eth2/the-docking"
-  to = "/:splat/eth2/merge/"
-[[redirects]]
-  from = "/*/eth2/the-merge"
-  to = "/:splat/eth2/merge/"
-[[redirects]]
-  from = "/*/eth2/docking"
-  to = "/:splat/eth2/merge/"
-[[redirects]]
-  from = "/*/developers/docs/layer-2-scaling"
-  to = "/:splat/developers/docs/scaling"
+  to = "/:splat/what-is-synquery/"
 
 # Jobs
 [[redirects]]
@@ -194,9 +167,9 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 # [[redirects]]
-#   from = "/*"
-#   to = "/index.html"
-#   status = 200
+   from = "/*"
+   to = "/index.html"
+   status = 200
 
 # https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]
