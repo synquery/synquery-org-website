@@ -7,3 +7,4 @@
 /.cache/
 /yarn-error.log
 /yarn.lock
+/src/intl/*.json
