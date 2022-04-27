@@ -211,7 +211,8 @@ To get more information about the program, learn how to use Crowdin, check on th
 
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
-- [webpack](https://webpack.js.org/)
+- [Parcel](https://parceljs.org/)
+- [highlight-js](https://highlightjs.org/)
 - [Netlify](https://www.netlify.com/) - DNS 管理と [`master` build](https://synquery.org) および [`dev` build](https://dev.synquery.org) のホスティング
 - [Crowdin](https://crowdin.com/) - 翻訳作業の効率化 (「翻訳の先導」について参照)
 - [GitHub Actions](https://github.com/features/actions) -  CI/CD と課題や問題のトラッキング

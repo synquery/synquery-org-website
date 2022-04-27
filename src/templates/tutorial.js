@@ -1,24 +1,24 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { useIntl } from "gatsby-plugin-intl"
-import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import styled from "styled-components"
+import React from "react";
+import { graphql } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
+import { MDXProvider } from "@mdx-js/react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import styled from "styled-components";
 
-import ButtonLink from "../components/ButtonLink"
-import Card from "../components/Card"
-import Codeblock from "../components/Codeblock"
-import TutorialMetadata from "../components/TutorialMetadata"
-import FileContributors from "../components/FileContributors"
-import InfoBanner from "../components/InfoBanner"
-import Link from "../components/Link"
-import MarkdownTable from "../components/MarkdownTable"
-import PageMetadata from "../components/PageMetadata"
-import Pill from "../components/Pill"
-import TableOfContents from "../components/TableOfContents"
-import SectionNav from "../components/SectionNav"
-import { isLangRightToLeft } from "../utils/translations"
-import CallToContribute from "../components/CallToContribute"
+import ButtonLink from "../components/ButtonLink";
+import Card from "../components/Card";
+import Codeblock from "../components/Codeblock";
+import TutorialMetadata from "../components/TutorialMetadata";
+import FileContributors from "../components/FileContributors";
+import InfoBanner from "../components/InfoBanner";
+import Link from "../components/Link";
+import MarkdownTable from "../components/MarkdownTable";
+import PageMetadata from "../components/PageMetadata";
+import Pill from "../components/Pill";
+import TableOfContents from "../components/TableOfContents";
+import SectionNav from "../components/SectionNav";
+import { isLangRightToLeft } from "../utils/translations";
+import CallToContribute from "../components/CallToContribute";
 import {
   Divider,
   Paragraph,
@@ -27,8 +27,8 @@ import {
   Header3,
   Header4,
   ListItem,
-} from "../components/SharedStyledComponents"
-import Emoji from "../components/Emoji"
+} from "../components/SharedStyledComponents";
+import Emoji from "../components/Emoji";
 
 const Page = styled.div`
   display: flex;
@@ -43,14 +43,14 @@ const Page = styled.div`
     padding: 0;
     background: ${(props) => props.theme.colors.background};
   }
-`
+`;
 
 const DesktopTableOfContents = styled(TableOfContents)`
   padding-top: 4rem;
-`
+`;
 const MobileTableOfContents = styled(TableOfContents)`
   margin-bottom: 2rem;
-`
+`;
 
 // Apply styles for classes within markdown here
 const ContentContainer = styled.article`
@@ -80,7 +80,7 @@ const ContentContainer = styled.article`
       color: ${(props) => props.theme.colors.text200};
     }
   }
-`
+`;
 
 const H1 = styled(Header1)`
   font-size: 2.5rem;
@@ -93,7 +93,7 @@ const H1 = styled(Header1)`
   &:before {
     margin-top: -160px;
   }
-`
+`;
 
 const H2 = styled(Header2)`
   font-family: ${(props) => props.theme.fonts.monospace};
@@ -103,7 +103,7 @@ const H2 = styled(Header2)`
     height: 160px;
     margin-top: -160px;
   }
-`
+`;
 
 const H3 = styled(Header3)`
   @media (max-width: ${(props) => props.theme.breakpoints.m}) {
@@ -114,7 +114,7 @@ const H3 = styled(Header3)`
     height: 160px;
     margin-top: -160px;
   }
-`
+`;
 const H4 = styled(Header4)`
   @media (max-width: ${(props) => props.theme.breakpoints.m}) {
     font-size: 1rem;
@@ -124,7 +124,7 @@ const H4 = styled(Header4)`
     height: 160px;
     margin-top: -160px;
   }
-`
+`;
 
 // Note: you must pass components to MDXProvider in order to render them in markdown files
 // https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#mdxprovider
@@ -146,7 +146,7 @@ const components = {
   Pill,
   CallToContribute,
   Emoji,
-}
+};
 
 const Contributors = styled(FileContributors)`
   margin-top: 3rem;
@@ -154,17 +154,17 @@ const Contributors = styled(FileContributors)`
   background: ${(props) => props.theme.colors.ednBackground};
   padding: 1rem;
   border-radius: 4px;
-`
+`;
 
 const TutorialPage = ({ data, pageContext }) => {
-  const pageData = data.pageData
-  const isRightToLeft = isLangRightToLeft(pageData.frontmatter.lang)
+  const pageData = data.pageData;
+  const isRightToLeft = isLangRightToLeft(pageData.frontmatter.lang);
 
-  const tocItems = pageData.tableOfContents.items
+  const tocItems = pageData.tableOfContents.items;
 
-  const { editContentUrl } = data.siteData.siteMetadata
-  const { relativePath } = pageContext
-  const absoluteEditPath = `${editContentUrl}${relativePath}`
+  const { editContentUrl } = data.siteData.siteMetadata;
+  const { relativePath } = pageContext;
+  const absoluteEditPath = `${editContentUrl}${relativePath}`;
 
   return (
     <Page dir={isRightToLeft ? "rtl" : "ltr"}>
@@ -195,10 +195,10 @@ const TutorialPage = ({ data, pageContext }) => {
         />
       )}
     </Page>
-  )
-}
+  );
+};
 
-export default TutorialPage
+export default TutorialPage;
 
 export const query = graphql`
   query TutorialPageQuery($relativePath: String) {
@@ -231,4 +231,4 @@ export const query = graphql`
       timeToRead
     }
   }
-`
+`;

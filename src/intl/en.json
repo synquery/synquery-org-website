@@ -1,4 +1,6 @@
 {
+  "website_last_updated": "Website last updated",
+  "update_datetime": "{Updated,date} {Updated,time}",
   "1inch-logo": "1inch logo",
   "aave-logo": "Aave logo",
   "about": "About",
@@ -213,6 +215,7 @@
   "defi-page": "Decentralized finance (DeFi)",
   "dao-page": "Decentralized autonomous organisations (DAOs)",
   "nft-page": "Non-fungible tokens (NFTs)",
+  "use_crypto": "Use Synquery",
   "page-about-h2": "Request a feature",
   "page-about-h3": "Work in progress",
   "page-about-h3-1": "Implemented features",

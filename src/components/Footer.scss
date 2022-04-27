@@ -1,0 +1,119 @@
+/* [synquery-org-website] Footer.scss */
+$norm-color: rgb(51, 51, 51);
+$norm-bg: rgb(255, 255, 255);
+$norm-fill: rgb(178, 178, 178);
+$norm-border: rgb(127, 127, 127);
+$norm-hover-color: rgb(28, 28, 225);
+$dark-color: rgb(242, 242, 242);
+$dark-bg: rgb(34, 34, 34);
+$dark-fill: rgb(178, 178, 178);
+$dark-border: rgb(178, 178, 178);
+$dark-hover-color: rgb(255, 112, 210);
+#Footer {
+  position: static;
+  display: block;
+  width: 100%;
+  >.container {
+    padding: 1rem 2rem;
+    color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    >.area {
+      &.foot-Top {
+        font-size: 0.875rem;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+        >.foot-LastUpdated {
+          color: $norm-fill;
+        }
+        >.foot-SocialIcons {
+          margin: 1rem 0px;
+          .foot-SocialIcon {
+            margin-left: 1rem;
+            width: 2rem;
+            fill: $norm-fill;
+          }
+        }
+      }
+      &.foot-LinkGrid {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        gap: 1rem;
+        margin-bottom: 18px;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        >.foot-LinkSection {
+          >.foot-LinkSectionHeader {
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin: 1.14em 0px;
+            font-weight: bold;
+          }
+          >ul.foot-List {
+            margin-left: 0;
+            >.foot-ListItem {
+              font-size: 0.875rem;
+              line-height: 1.6;
+              font-weight: 400;
+              margin: 0px; margin-bottom: 0.725rem;
+              list-style-type: none;
+              list-style-image: none;
+              >.link-Internal {
+                text-decoration: none;
+                color: $norm-fill;
+                &:hover {
+                  color: $norm-hover-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.foot-Copyright {
+        text-align: right; padding-right: 18px;
+        font-size: 80%;
+        color: $norm-color;
+      }
+    }
+  }
+}
+body.theme-Dark #Footer {
+  >.container {
+    color: rgb(242, 242, 242);
+    background-color: rgb(34, 34, 34);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    >.area {
+      &.foot-Top {
+        >.foot-LastUpdated {
+          color: $dark-fill;
+        }
+        >.foot-SocialIcons {
+          .foot-SocialIcon {
+            fill: $dark-fill;
+          }
+        }
+      }
+      &.foot-LinkGrid {
+        >.foot-LinkSection {
+          >.foot-List {
+            >.foot-ListItem {
+              >.link-Internal {
+                color: $dark-fill;
+                &:hover {
+                  color: $dark-hover-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.foot-Copyright {
+        color: $dark-color;
+      }
+    }
+  }
+}

@@ -1,42 +1,42 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { useIntl } from "gatsby-plugin-intl"
-import { MDXProvider } from "@mdx-js/react"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import styled from "styled-components"
-import Img from "gatsby-image"
-import ButtonLink from "../components/ButtonLink"
-import ButtonDropdown from "../components/ButtonDropdown"
-import BannerNotification from "../components/BannerNotification"
-import Card from "../components/Card"
-import ExpandableCard from "../components/ExpandableCard"
-import DocLink from "../components/DocLink"
-import Icon from "../components/Icon"
-import Contributors from "../components/Contributors"
-import InfoBanner from "../components/InfoBanner"
-import UpgradeStatus from "../components/UpgradeStatus"
-import Link from "../components/Link"
-import MarkdownTable from "../components/MarkdownTable"
-import Logo from "../components/Logo"
-import MeetupList from "../components/MeetupList"
-import PageMetadata from "../components/PageMetadata"
-import Pill from "../components/Pill"
-import RandomAppList from "../components/RandomAppList"
-import Roadmap from "../components/Roadmap"
-import Eth2TableOfContents from "../components/Eth2TableOfContents"
-import TableOfContents from "../components/TableOfContents"
-import TranslationsInProgress from "../components/TranslationsInProgress"
-import Translation from "../components/Translation"
-import SectionNav from "../components/SectionNav"
-import { isLangRightToLeft } from "../utils/translations"
+import React from "react";
+import { graphql } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
+import { MDXProvider } from "@mdx-js/react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import styled from "styled-components";
+import Img from "gatsby-image";
+import ButtonLink from "../components/ButtonLink";
+import ButtonDropdown from "../components/ButtonDropdown";
+import BannerNotification from "../components/BannerNotification";
+import Card from "../components/Card";
+import ExpandableCard from "../components/ExpandableCard";
+import DocLink from "../components/DocLink";
+import Icon from "../components/Icon";
+import Contributors from "../components/Contributors";
+import InfoBanner from "../components/InfoBanner";
+import UpgradeStatus from "../components/UpgradeStatus";
+import Link from "../components/Link";
+import MarkdownTable from "../components/MarkdownTable";
+import Logo from "../components/Logo";
+import MeetupList from "../components/MeetupList";
+import PageMetadata from "../components/PageMetadata";
+import Pill from "../components/Pill";
+import RandomAppList from "../components/RandomAppList";
+import Roadmap from "../components/Roadmap";
+import Eth2TableOfContents from "../components/Eth2TableOfContents";
+import TableOfContents from "../components/TableOfContents";
+import TranslationsInProgress from "../components/TranslationsInProgress";
+import Translation from "../components/Translation";
+import SectionNav from "../components/SectionNav";
+import { isLangRightToLeft } from "../utils/translations";
 import {
   Divider,
   Paragraph,
   Header1,
   Header4,
   H5,
-} from "../components/SharedStyledComponents"
-import Emoji from "../components/Emoji"
+} from "../components/SharedStyledComponents";
+import Emoji from "../components/Emoji";
 
 const Page = styled.div`
   display: flex;
@@ -50,7 +50,7 @@ const Page = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.l}) {
     flex-direction: column;
   }
-`
+`;
 
 const InfoColumn = styled.aside`
   display: flex;
@@ -64,7 +64,7 @@ const InfoColumn = styled.aside`
   @media (max-width: ${(props) => props.theme.breakpoints.l}) {
     display: none;
   }
-`
+`;
 
 const MobileButton = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.l}) {
@@ -77,7 +77,7 @@ const MobileButton = styled.div`
     z-index: 99;
     margin-bottom: 0rem;
   }
-`
+`;
 
 // Apply styles for classes within markdown here
 const ContentContainer = styled.article`
@@ -97,7 +97,7 @@ const ContentContainer = styled.article`
       color: ${(props) => props.theme.colors.text200};
     }
   }
-`
+`;
 
 const LastUpdated = styled.p`
   color: ${(props) => props.theme.colors.text200};
@@ -105,7 +105,7 @@ const LastUpdated = styled.p`
   padding-top: 1rem;
   margin-bottom: 0rem;
   border-top: 1px solid ${(props) => props.theme.colors.border};
-`
+`;
 
 const Pre = styled.pre`
   max-width: 100%;
@@ -115,7 +115,7 @@ const Pre = styled.pre`
   padding: 1rem;
   border: 1px solid ${(props) => props.theme.colors.preBorder};
   white-space: pre-wrap;
-`
+`;
 
 const H1 = styled.h1`
   font-size: 48px;
@@ -127,7 +127,7 @@ const H1 = styled.h1`
     font-size: 40px;
     display: none;
   }
-`
+`;
 
 const H2 = styled.h2`
   font-size: 32px;
@@ -157,7 +157,7 @@ const H2 = styled.h2`
       fill: ${(props) => props.theme.colors.primary};
     }
   }
-`
+`;
 
 const H3 = styled.h3`
   font-size: 24px;
@@ -186,7 +186,7 @@ const H3 = styled.h3`
       fill: ${(props) => props.theme.colors.primary};
     }
   }
-`
+`;
 
 // Note: you must pass components to MDXProvider in order to render them in markdown files
 // https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#mdxprovider
@@ -216,22 +216,22 @@ const components = {
   UpgradeStatus,
   DocLink,
   ExpandableCard,
-}
+};
 
 const Title = styled.h1`
   font-size: 40px;
   font-weight: 700;
   margin-top: 1rem;
-`
+`;
 
 const SummaryPoint = styled.li`
   font-size: 16px;
   color: ${(props) => props.theme.colors.text300};
   margin-bottom: 0rem;
   line-height: auto;
-`
+`;
 
-const SummaryBox = styled.div``
+const SummaryBox = styled.div``;
 
 const StyledButtonDropdown = styled(ButtonDropdown)`
   margin-bottom: 2rem;
@@ -241,23 +241,23 @@ const StyledButtonDropdown = styled(ButtonDropdown)`
   @media (min-width: ${(props) => props.theme.breakpoints.s}) {
     align-self: flex-end;
   }
-`
+`;
 
 const StyledEmoji = styled(Emoji)`
   margin-right: 1rem;
   flex-shrink: 0;
-`
+`;
 
 const MobileButtonDropdown = styled(StyledButtonDropdown)`
   margin-bottom: 0rem;
   @media (min-width: ${(props) => props.theme.breakpoints.l}) {
     display: none;
   }
-`
+`;
 
 const Container = styled.div`
   position: relative;
-`
+`;
 
 const HeroContainer = styled.div`
   background: ${(props) => props.theme.colors.cardGradient};
@@ -271,7 +271,7 @@ const HeroContainer = styled.div`
     flex-direction: column-reverse;
     max-height: 100%;
   }
-`
+`;
 
 const Image = styled(Img)`
   flex: 1 1 100%;
@@ -292,7 +292,7 @@ const Image = styled(Img)`
     align-self: center;
     margin: 0;
   }
-`
+`;
 
 const MoreContent = styled(Link)`
   width: 100%;
@@ -306,12 +306,12 @@ const MoreContent = styled(Link)`
   @media (max-width: ${(props) => props.theme.breakpoints.l}) {
     display: none;
   }
-`
+`;
 
 const MobileTableOfContents = styled(TableOfContents)`
   position: relative;
   z-index: 2;
-`
+`;
 
 const StyledBannerNotification = styled(BannerNotification)`
   display: flex;
@@ -319,7 +319,7 @@ const StyledBannerNotification = styled(BannerNotification)`
   @media (max-width: ${({ theme }) => theme.breakpoints.l}) {
     display: none;
   }
-`
+`;
 
 const TitleCard = styled.div`
   background: ${(props) => props.theme.colors.background};
@@ -345,23 +345,23 @@ const TitleCard = styled.div`
     box-shadow: none;
     margin-top: 0;
   }
-`
+`;
 
 const UseCasePage = ({ data, pageContext }) => {
-  const mdx = data.pageData
-  const isRightToLeft = isLangRightToLeft(mdx.frontmatter.lang)
-  const tocItems = mdx.tableOfContents.items
+  const mdx = data.pageData;
+  const isRightToLeft = isLangRightToLeft(mdx.frontmatter.lang);
+  const tocItems = mdx.tableOfContents.items;
 
-  const { editContentUrl } = data.siteData.siteMetadata
-  const { relativePath } = pageContext
-  const absoluteEditPath = `${editContentUrl}${relativePath}`
+  const { editContentUrl } = data.siteData.siteMetadata;
+  const { relativePath } = pageContext;
+  const absoluteEditPath = `${editContentUrl}${relativePath}`;
 
-  let useCase = "defi"
+  let useCase = "defi";
   if (pageContext.slug.includes("dao")) {
-    useCase = "dao"
+    useCase = "dao";
   }
   if (pageContext.slug.includes("nft")) {
-    useCase = "nft"
+    useCase = "nft";
   }
 
   const dropdownLinks = {
@@ -381,7 +381,7 @@ const UseCasePage = ({ data, pageContext }) => {
         to: "/dao/",
       },
     ],
-  }
+  };
 
   return (
     <Container>
@@ -446,8 +446,8 @@ const UseCasePage = ({ data, pageContext }) => {
         </MobileButton>
       </Page>
     </Container>
-  )
-}
+  );
+};
 
 export const useCasePageQuery = graphql`
   query UseCasePageQuery($relativePath: String) {
@@ -490,6 +490,6 @@ export const useCasePageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default UseCasePage
+export default UseCasePage;

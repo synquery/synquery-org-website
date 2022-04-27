@@ -1,0 +1,118 @@
+/**
+ * [synquery-org-website](styles) layout.scss
+ * initializr の上にデザインを実装する。
+ */
+@import "./initializr.scss";
+$norm-color: rgb(51, 51, 51);
+$norm-bg: rgb(255, 255, 255);
+$norm-fill: rgb(178, 178, 178);
+$norm-border: rgb(127, 127, 127);
+$norm-hover-color: rgb(28, 28, 225);
+$dark-color: rgb(242, 242, 242);
+$dark-bg: rgb(34, 34, 34);
+$dark-fill: rgb(178, 178, 178);
+$dark-border: rgb(178, 178, 178);
+$dark-hover-color: rgb(255, 112, 210);
+#root {
+  display: block;
+  margin: 0; padding: 0;
+  .page-Content {
+    display: flex;
+    padding: 24px 8px 12px;
+    color: #222;
+    background-color: #fff;
+    h1 {
+      font-size: 50px;
+    }
+    pre {
+      max-width: 100%;
+      overflow-x: scroll;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgba(25, 25, 25, 0.05);
+      border-radius: 0.25rem;
+      padding: 1.2rem 1rem 0 1rem;
+      white-space: pre-wrap;
+    }
+    a {
+      fill: $norm-fill;
+      color: #00f;
+      &:hover {
+        fill: $norm-hover-color;
+        text-decoration: underline;
+      }
+      &:visited {
+        color: #88f;
+      }
+    }
+    article {
+      max-width: 1280px;
+      width: 75%;
+      img {
+        max-width: 100%;
+      }
+      table {
+        background: $norm-bg;
+        tr {
+          border-bottom: 1px solid $norm-border;
+          th, td {
+            padding-left: 8px; padding-right: 2px;
+          }
+        }
+      }
+    }
+    aside {
+      max-width: 25%;
+      min-width: 12rem;
+    }
+    pre {
+      padding-top: 0;
+    }
+  }
+}
+@media all and(max-width:1024px) {
+#root {
+  .page-Content {
+    article {
+      max-width: 100%;
+      width: 100%;
+    }
+    aside {
+      display: none;
+    }
+  }
+}
+}
+body.theme-Dark #root {
+  .page-Content {
+    color: #fff;
+    background-color: #000;
+    article {
+      table {
+        background: $dark-bg;
+        tr {
+          border-bottom: 1px solid $dark-border;
+        }
+      }
+    }
+    code {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    pre {
+      background-color: #ddd;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      code {
+        background-color: transparent;
+      }
+    }
+    a {
+      fill: $dark-fill;
+      color: #8cf;
+      &:hover {
+        fill: $dark-hover-color;
+      }
+      &:visited {
+        color: #aef;
+      }
+    }
+  }
+}
