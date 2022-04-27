@@ -51,7 +51,7 @@
     "start-org": "yarn merge-translations && yarn copy-contributors",
     "start:lambda": "netlify-lambda serve src/lambda",
     "test": "jest",
-    "serve": "serve ./dist"
+    "serve": "serve ./dist -c ../src/data/serve.json"
   },
   "husky": {
     "hooks": {
