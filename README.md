@@ -183,8 +183,8 @@ yarn start:lambda
 
 ### Release
 
-- `master` is continually synced to Netlify and will automatically deploy new commits to synquery.org
-- The [website team](https://synquery.org/en/contributing/#how-decisions-about-the-site-are-made) will periodically merge `dev` into `master` (typically multiple times per week)
+- `main` is continually synced to Netlify and will automatically deploy new commits to synquery.org
+- The [website team](https://synquery.org/en/contributing/#how-decisions-about-the-site-are-made) will periodically merge `dev` into `main` (typically multiple times per week)
 - You can [view the history of releases](https://github.com/synquery/synquery-org-website/releases), which include PR highlights
 
 ## Translation Program
@@ -202,11 +202,10 @@ To get more information about the program, learn how to use Crowdin, check on th
 - [Node.js](https://nodejs.org/)
 - [Yarn package manager](https://yarnpkg.com/cli/install)
 - [webpack](https://webpack.js.org/)
-- [Netlify](https://www.netlify.com/) - DNS management and primary host for [`master` build](https://synquery.org) and [`dev` build](https://dev.synquery.org). 
+- [Netlify](https://www.netlify.com/) - DNS management and primary host for [`main` build](https://synquery.org) and [`dev` build](https://dev.synquery.org). 
   Also provides automatic preview deployments for all pull requests
 - [Crowdin](https://crowdin.com/) - crowdsourcing for our translation efforts (See "Translation initiative" below)
 - [GitHub Actions](https://github.com/features/actions) - Manages CI/CD, and issue tracking
-- [GraphQL](https://graphql.org/) - A query language for APIs
 - [Algolia](https://www.algolia.com/) - Site indexing, rapid intra-site search results, and search analytics. [Learn more on how we implement Algolia for site search](./docs/ALGOLIA_DOCSEARCH.md).
   - Primary implementation: `/src/components/Search/index.js`
 

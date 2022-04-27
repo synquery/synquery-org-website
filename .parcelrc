@@ -1,0 +1,7 @@
+{
+  "extends": ["@parcel/config-default"],
+  "transformers": {
+    "*.scss": ["@parcel/transformer-sass"],
+    "*.md": ["@parcel/transformer-raw"]
+  }
+}

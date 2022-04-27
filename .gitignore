@@ -2,3 +2,9 @@
 /node_modules/
 /package-lock.json
 /public/
+/dist/
+/.parcel-cache/
+/.cache/
+/yarn-error.log
+/yarn.lock
+/src/intl/*.json
