@@ -9,6 +9,18 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
+    {
+      "login": "synquery",
+      "name": "Synquery",
+      "avatar_url": "https://avatars.githubusercontent.com/synquery?v=3",
+      "profile": "https://welcome.synquery.com",
+      "contributions": [
+        "question",
+        "doc",
+        "review",
+        "talk"
+      ]
+    },
 
   ],
   "contributorsPerLine": 7,
