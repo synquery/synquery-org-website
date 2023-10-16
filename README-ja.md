@@ -213,12 +213,10 @@ To get more information about the program, learn how to use Crowdin, check on th
 - [Yarn package manager](https://yarnpkg.com/cli/install)
 - [Parcel](https://parceljs.org/)
 - [highlight-js](https://highlightjs.org/)
-- [Netlify](https://www.netlify.com/) - DNS 管理と [`master` build](https://synquery.org) および [`dev` build](https://dev.synquery.org) のホスティング
+- [Netlify](https://www.netlify.com/) - DNS 管理と [`main` build](https://synquery.org) および [`dev` build](https://dev.synquery.org) のホスティング
 - [Crowdin](https://crowdin.com/) - 翻訳作業の効率化 (「翻訳の先導」について参照)
 - [GitHub Actions](https://github.com/features/actions) -  CI/CD と課題や問題のトラッキング
-- [GraphQL](https://graphql.org/) - API のためのクエリフォーマット
-- [Algolia](https://www.algolia.com/) - Site indexing, rapid intra-site search results, and search analytics. [Learn more on how we implement Algolia for site search](./docs/ALGOLIA_DOCSEARCH.md).
-  - Primary implementation: `/src/components/Search/index.js`
+- [OpenAPI Specification](https://swagger.io/resources/open-api/) - RESTful API のためのドキュメント定義
 
 ### Code structure
 
@@ -228,10 +226,7 @@ To get more information about the program, learn how to use Crowdin, check on th
 | `/src/assets`                            | Image assets                                                                                                                                                                                                        |
 | `/src/content`                           | Markdown/MDX files for site content stored here. <br>For example: `synquery.org/en/about/` is built from `src/content/about/index.md` <br>The markdown files are parsed and rendered by `src/templates/static.js`\* |
 | `/src/content/developers/docs`           | \*Markdown files in here use the Docs template: `src/templates/docs.js`                                                                                                                                             |
-| `/src/content/developers/tutorials`      | \*Markdown files in here use the Tutorial template: `src/templates/tutorial.js`                                                                                                                                     |
-| `/src/data`                              | General data files importable by components                                                                                                                                                                         |
 | `/src/intl`                              | Language translation JSON files                                                                                                                                                                                     |
-| `/src/lambda`                            | Lambda function scripts for API calls                                                                                                                                                                               |
 | `/src/pages`<br>`/src/pages-conditional` | React components that function as standalone pages. <br>For example: `synquery.org/en/wallets/find-wallet` is built from `src/pages/wallets/find-wallet.js`                                                        |
 | `/src/scripts`<br>`/src/utils`           | Custom utility scripts                                                                                                                                                                                              |
 | `/src/styles`                            | Stores `layout.css` which contains root level css styling                                                                                                                                                           |
