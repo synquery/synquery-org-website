@@ -9,7 +9,18 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
-
+  {
+    "login": "ystk_skm",
+    "name": "Yoshitaka Sakamoto",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1500684?v=3",
+    "profile": "https://kentcdodds.com",
+    "contributions": [
+      "question",
+      "doc",
+      "review",
+      "talk"
+    ]
+  }
   ],
   "contributorsPerLine": 7,
   "projectName": "synquery-org-website",
