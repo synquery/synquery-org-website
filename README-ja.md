@@ -238,6 +238,9 @@ To get more information about the program, learn how to use Crowdin, check on th
 | `/src/templates`                         | JSX templates that define layouts of different regions of the site                                                                                                                                                  |
 | `/src/theme.js`                          | Declares site color themes, breakpoints and other constants (try to utilize these colors first)                                                                                                                     |
 
+### 注意喚起
+「Synquery」は Synquery web-platform を提供するテクノロジーカンパニーの日本特許庁における登録商標です。 最近（2024年）発足したと思われる同名の米国（？）企業「synquery inc. (ドメイン：synquery.ai）」とは何の関係もありません。ご了承ください。
+
 <!--
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
