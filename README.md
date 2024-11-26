@@ -224,6 +224,9 @@ To get more information about the program, learn how to use Crowdin, check on th
 | `/src/templates`                         | JSX templates that define layouts of different regions of the site                                                                                                                                                  |
 | `/src/theme.js`                          | Declares site color themes, breakpoints and other constants (try to utilize these colors first)                                                                                                                     |
 
+### !! WARNING !!
+"Synquery" is the registered trademark at JPO of the technology company that provides the Synquery Web Platform. It has NOTHING to do with the American (?) company "synquery inc. (domain: synquery.ai)" that was recently launched (in 2024). note that.
+
 <!--
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
